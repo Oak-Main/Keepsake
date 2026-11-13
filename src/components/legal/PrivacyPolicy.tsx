@@ -38,12 +38,15 @@ export const PrivacyPolicy: React.FC = () => {
 
           <h2 className="text-lg font-serif-title font-bold text-stone-900 mt-6">What We Collect</h2>
           <p>
-            Keepsake Almanac does not require an account, and we do not collect your name,
-            email address, or any identifying information about you as a visitor. The only
-            personal information the Service handles is what <em>you choose to type into it</em>:
-            memory entries, family member details, calendar events, and time capsule entries
-            (which may include names, relationships, birth/death years, locations, life
-            events, and any photo URLs you provide).
+            Keepsake Almanac does not require an account, and we do not ask for your name or
+            email address. The Service handles two kinds of information. The first is what
+            <em> you choose to type into it</em>: memory entries, family member details,
+            calendar events, and time capsule entries (which may include names, relationships,
+            birth/death years, locations, life events, and any photo URLs you provide). The
+            second is collected automatically when a page loads: Google Analytics records a
+            random cookie identifier, your approximate location, device and browser type, the
+            referring page and the pages you view (see Analytics below), and our host,
+            Cloudflare, processes your IP address and request details to deliver the site.
           </p>
 
           <h2 className="text-lg font-serif-title font-bold text-stone-900 mt-6">Where That Information Is Stored</h2>
@@ -88,8 +91,8 @@ export const PrivacyPolicy: React.FC = () => {
             a random identifier, and it records your approximate location, device and browser
             type, the page that referred you and the pages you view. We do not use it to
             identify you and we do not sell this data. You can block these cookies in your
-            browser settings or use Google's opt-out add-on at
-            https://tools.google.com/dlpage/gaoptout.
+            browser settings or use Google's opt-out add-on at{' '}
+            <a href="https://tools.google.com/dlpage/gaoptout" className="text-amber-800 underline underline-offset-4">https://tools.google.com/dlpage/gaoptout</a>.
           </p>
 
           <h2 className="text-lg font-serif-title font-bold text-stone-900 mt-6">Your Choices</h2>
