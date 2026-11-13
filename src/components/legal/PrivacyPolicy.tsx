@@ -38,8 +38,9 @@ export const PrivacyPolicy: React.FC = () => {
 
           <h2 className="text-lg font-serif-title font-bold text-stone-900 mt-6">What We Collect</h2>
           <p>
-            Keepsake Almanac does not require an account, and we do not ask for your name or
-            email address. The Service handles two kinds of information. The first is what
+            Keepsake Almanac does not require an account and never asks for your email address.
+            The memory form asks for an author or storyteller name, which can be any name you
+            choose. The Service handles two kinds of information. The first is what
             <em> you choose to type into it</em>: memory entries, family member details,
             calendar events, and time capsule entries (which may include names, relationships,
             birth/death years, locations, life events, and any photo URLs you provide). The
