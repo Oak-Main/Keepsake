@@ -2,7 +2,9 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Scroll } from 'lucide-react';
 
-const LAST_UPDATED = 'August 29, 2026';
+const LAST_UPDATED = 'November 13, 2026';
+
+// Served live by the fleet-legal-pages worker; keep in step (see PrivacyPolicy.tsx).
 
 export const TermsOfService: React.FC = () => {
   useEffect(() => {
@@ -25,8 +27,8 @@ export const TermsOfService: React.FC = () => {
         <div className="font-garamond text-base leading-relaxed space-y-5 text-stone-800">
           <p>
             These Terms of Service ("Terms") govern your use of Keepsake Almanac (the
-            "Service"), operated by <strong>Oak and Main Developers LLC</strong>, 2108 N St.,
-            Sacramento, CA 95816 ("Oak and Main Developers," "we," "us," or "our"). By using
+            "Service"), operated by <strong>Oak and Main Developers LLC</strong>, 1223 Cleveland Ave,
+            Suite 200, San Diego, CA 92103 ("Oak and Main Developers," "we," "us," or "our"). By using
             the Service, you agree to these Terms.
           </p>
 
@@ -34,8 +36,8 @@ export const TermsOfService: React.FC = () => {
           <p>
             Keepsake Almanac is a free, no-account browser tool for recording family
             milestones, heirloom stories, calendar events, and time capsules. Content you
-            enter is saved primarily to your own browser's local storage, with an optional
-            server-side backup copy — see our <Link to="/privacy" className="text-amber-800 underline underline-offset-4">Privacy Policy</Link> for
+            enter is saved to your own browser's local storage; a copy of each new memory is
+            sent to our server and discarded — see our <a href="/privacy/" className="text-amber-800 underline underline-offset-4">Privacy Policy</a> for
             exactly how that works.
           </p>
 
@@ -54,9 +56,8 @@ export const TermsOfService: React.FC = () => {
           <p>
             Don't use the Service to store or transmit unlawful content, content that
             infringes someone else's rights, or content intended to harass or harm another
-            person. We reserve the right to disable or remove server-side backup copies that
-            violate this section; we generally have no visibility into content stored only in
-            your local browser.
+            person. We keep no copy of Your Content and have no visibility into what is stored
+            in your browser.
           </p>
 
           <h2 className="text-lg font-serif-title font-bold text-stone-900 mt-6">4. No Warranty</h2>
@@ -89,15 +90,16 @@ export const TermsOfService: React.FC = () => {
           <h2 className="text-lg font-serif-title font-bold text-stone-900 mt-6">Contact</h2>
           <p>
             Oak and Main Developers LLC<br />
-            2108 N St., Sacramento, CA 95816
+            1223 Cleveland Ave, Suite 200, San Diego, CA 92103<br />
+            admin@oakandmain.dev
           </p>
         </div>
       </div>
 
       <p className="text-center text-sm">
-        <Link to="/privacy" className="text-amber-800 hover:text-amber-950 font-semibold underline underline-offset-4">
+        <a href="/privacy/" className="text-amber-800 hover:text-amber-950 font-semibold underline underline-offset-4">
           Privacy Policy
-        </Link>
+        </a>
         <span className="mx-2 text-stone-400">•</span>
         <Link to="/almanac" className="text-amber-800 hover:text-amber-950 font-semibold underline underline-offset-4">
           Back to Keepsake Almanac

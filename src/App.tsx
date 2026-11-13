@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route, Navigate, Link } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { DailyAlmanac } from './components/DailyAlmanac';
 import { MilestoneVault } from './components/MilestoneVault';
@@ -172,9 +172,9 @@ export function App() {
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 border-t border-amber-900/60 text-xs">
             <div className="flex items-center space-x-4 text-amber-300/80">
-              <Link to="/privacy" className="hover:text-amber-100 transition">Privacy Policy</Link>
+              <a href="/privacy/" className="hover:text-amber-100 transition">Privacy Policy</a>
               <span className="text-amber-800">•</span>
-              <Link to="/terms" className="hover:text-amber-100 transition">Terms of Service</Link>
+              <a href="/terms/" className="hover:text-amber-100 transition">Terms of Service</a>
             </div>
             <p className="text-amber-200">
               © {new Date().getFullYear()} Oak and Main Developers LLC. All Rights Reserved.
